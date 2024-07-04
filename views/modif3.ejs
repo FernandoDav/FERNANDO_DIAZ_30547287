@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+</head>
+<body>
+            <h2>añadir</h2>
+            <form action="/modif3" method="post">
+              <label for="code">Código</label>
+              <input type="number" name="code" value="<%= almacen.code %>" placeholder="Código del producto" required>
+              <label for="name">Nombre del Producto</label>
+              <input type="text" name="name" value="<%= almacen.name %>" placeholder="Nombre del Producto" required>
+             <label for="cant">CANTIDAD</label>
+              <input type="number" name="cant" value="<%= almacen.cant %>" placeholder="CANTIDAD del Producto" required>
+             <label for="precio">Precio</label>
+              <input type="number" name="precio" value="<%= almacen.precio %>" placeholder="Precio del Producto" required>
+            
+              <input type="submit" value="Insertar">
+          
+          </form>
+</body>
+</html>
